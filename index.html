@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPL 2026 | Dark Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+
+header{
+    background:linear-gradient(90deg,#fc6142,#2905f5,#ee4444);
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:30px;
+}
+
+
+nav{
+    background:#111827;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#6547ec;
+}
+
+
+section{
+    padding:50px 8%;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+
+.team-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    justify-content:center;
+}
+
+.team-card{
+    background:#1e293b;
+    padding:20px;
+    width:220px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.team-card:hover{
+    transform:scale(1.05);
+    background:#334155;
+}
+
+.team-card summary{
+    list-style:none;
+    cursor:pointer;
+    text-align:center;
+}
+
+summary::-webkit-details-marker{
+    display:none;
+}
+
+.team-card img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:10px;
+}
+
+.team-card h3{
+    margin-bottom:10px;
+}
+
+.team-card ul{
+    margin-top:10px;
+    text-align:left;
+    font-size:14px;
+}
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#1e293b;
+}
+
+tr:nth-child(even){
+    background:#1f2937;
+}
+
+tr:hover{
+    background:#334155;
+}
+
+
+tr:first-child td{
+    color:#facc15;
+    font-weight:bold;
+}
+
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1> IPL 2026 </h1>
+</header>
+
+<nav>
+    <a href="#teams">Teams</a>
+    <a href="#points">Points Table</a>
+    <a href="#timings">Timings</a>
+</nav>
+
+<!-- TEAMS SECTION -->
+<section id="teams">
+<h2>All IPL Teams </h2>
+
+<div class="team-container">
+
+<!-- SRH -->
+<details class="team-card">
+<summary>
+<img src="c:\Users\Hp\Downloads\SRH.jfif">
+<h3>SRH</h3>
+</summary>
+<ul>
+<li>Abhishek Sharma – Batsman</li>
+<li>Rahul Tripathi – Batsman</li>
+<li>Heinrich Klaasen – Wicket Keeper</li>
+<li>Washington Sundar – All-Rounder</li>
+<li>Bhuvneshwar Kumar – Bowler</li>
+</ul>
+</details>
+
+<!-- RCB -->
+<details class="team-card">
+<summary>
+<img src="c:\Users\Hp\Downloads\RCB.jfif">
+<h3>RCB</h3>
+</summary>
+<ul>
+<li>Virat Kohli – Batsman</li>
+<li>Faf du Plessis – Batsman</li>
+<li>Dinesh Karthik – Wicket Keeper</li>
+<li>Glenn Maxwell – All-Rounder</li>
+<li>Mohammed Siraj – Bowler</li>
+</ul>
+</details>
+
+<!-- CSK -->
+<details class="team-card">
+<summary>
+<img src="c:\Users\Hp\Downloads\CSK.jfif">
+<h3>CSK</h3>
+</summary>
+<ul>
+<li>Ruturaj Gaikwad – Batsman</li>
+<li>Devon Conway – Batsman</li>
+<li>MS Dhoni – Wicket Keeper</li>
+<li>Ravindra Jadeja – All-Rounder</li>
+<li>Deepak Chahar – Bowler</li>
+</ul>
+</details>
+
+<!-- KKR -->
+<details class="team-card">
+<summary>
+<img src="c:\Users\Hp\Downloads\KKR.jfif">
+<h3>KKR</h3>
+</summary>
+<ul>
+<li>Shreyas Iyer – Batsman</li>
+<li>Andre Russell – All-Rounder</li>
+<li>Sunil Narine – All-Rounder</li>
+<li>Rinku Singh – Batsman</li>
+<li>Varun Chakravarthy – Bowler</li>
+</ul>
+</details>
+
+<!-- LSG -->
+<details class="team-card">
+<summary>
+<img src="c:\Users\Hp\Downloads\LSG.png">
+<h3>LSG</h3>
+</summary>
+<ul>
+<li>KL Rahul – Wicket Keeper</li>
+<li>Quinton de Kock – Batsman</li>
+<li>Nicholas Pooran – Batsman</li>
+<li>Marcus Stoinis – All-Rounder</li>
+<li>Ravi Bishnoi – Bowler</li>
+</ul>
+</details>
+
+<!-- MI -->
+<details class="team-card">
+<summary>
+<img src="c:\Users\Hp\Downloads\MI.jfif">
+<h3>MI</h3>
+</summary>
+<ul>
+<li>Rohit Sharma – Batsman</li>
+<li>Ishan Kishan – Wicket Keeper</li>
+<li>Suryakumar Yadav – Batsman</li>
+<li>Hardik Pandya – All-Rounder</li>
+<li>Jasprit Bumrah – Bowler</li>
+</ul>
+</details>
+
+<!-- GT -->
+<details class="team-card">
+<summary>
+<img src="c:\Users\Hp\Downloads\GT.jfif">
+<h3>GT</h3>
+</summary>
+<ul>
+<li>Shubman Gill – Batsman</li>
+<li>David Miller – Batsman</li>
+<li>Rahul Tewatia – All-Rounder</li>
+<li>Rashid Khan – Bowler</li>
+<li>Mohammed Shami – Bowler</li>
+</ul>
+</details>
+
+<!-- DC -->
+<details class="team-card">
+<summary>
+<img src="c:\Users\Hp\Downloads\DC.jfif">
+<h3>DC</h3>
+</summary>
+<ul>
+<li>David Warner – Batsman</li>
+<li>Rishabh Pant – Wicket Keeper</li>
+<li>Axar Patel – All-Rounder</li>
+<li>Prithvi Shaw – Batsman</li>
+<li>Anrich Nortje – Bowler</li>
+</ul>
+</details>
+
+<!-- PBKS -->
+<details class="team-card">
+<summary>
+<img src="c:\Users\Hp\Downloads\PBKS.jfif">
+<h3>PBKS</h3>
+</summary>
+<ul>
+<li>Shikhar Dhawan – Batsman</li>
+<li>Liam Livingstone – All-Rounder</li>
+<li>Jitesh Sharma – Wicket Keeper</li>
+<li>Kagiso Rabada – Bowler</li>
+<li>Arshdeep Singh – Bowler</li>
+</ul>
+</details>
+
+<!-- RR -->
+<details class="team-card">
+<summary>
+<img src="c:\Users\Hp\Downloads\RR.png">
+<h3>RR</h3>
+</summary>
+<ul>
+<li>Sanju Samson – Wicket Keeper</li>
+<li>Jos Buttler – Batsman</li>
+<li>Yashasvi Jaiswal – Batsman</li>
+<li>Ravichandran Ashwin – All-Rounder</li>
+<li>Trent Boult – Bowler</li>
+</ul>
+</details>
+
+</div>
+</section>
+
+<section>
+<h2> Matches </h2>
+<h3>14 Matches Each, Total 70 Matches in the League Stage. Top 4 Teams Qualify for Playoffs. </h3>
+</section>
+
+<!-- POINTS TABLE -->
+<section id="points">
+<h2>Points Table </h2>
+
+<table>
+<tr>
+<th>Position</th>
+<th>Team</th>
+<th>Matches</th>
+<th>Wins</th>
+<th>Losses</th>
+<th>Points</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>SRH</td>
+<td>14</td>
+<td>11</td>
+<td>3</td>
+<td>22</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>MI</td>
+<td>14</td>
+<td>10</td>
+<td>4</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>KKR</td>
+<td>14</td>
+<td>9</td>
+<td>5</td>
+<td>18</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>GT</td>
+<td>14</td>
+<td>8</td>
+<td>6</td>
+<td>16</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>LSG</td>
+<td>14</td>
+<td>7</td>
+<td>7</td>
+<td>14</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>RR</td>
+<td>14</td>
+<td>6</td>
+<td>8</td>
+<td>12</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>DC</td>
+<td>14</td>
+<td>5</td>
+<td>9</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>PBKS</td>
+<td>14</td>
+<td>4</td>
+<td>10</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>RCB</td>
+<td>14</td>
+<td>3</td>
+<td>11</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>CSK</td>
+<td>14</td>
+<td>2</td>
+<td>12</td>
+<td>4</td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- TIMINGS -->
+<section id="timings"> 
+<h2>Match Timings</h2>
+<ul> 
+ <li> <h4>Most matches are scheduled in the evening, starting at 7:30 PM.</h4> </li>
+ <li> <h4>Weekend matches may have afternoon, starting at 3:30 PM.</h4> </li>
+ </ul>
+  
+</section>
+
+<footer>
+ 2026 IPL (INDIAN PREMIER LEAGUE)
+</footer>
+
+</body>
+</html>
